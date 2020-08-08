@@ -29,15 +29,20 @@ public class StudentMain {
 
 			if (s.getAge() % 2 == 0) {
 				List<Student> le = new ArrayList();
-				le.add(a.get(k));
-
-			} else {
+				le.add(s);
+			} 
+			else {
 				List<Student> lo = new ArrayList();
-				lo.add(a.get(k));
+				lo.add(s);
 			}
 
 		}
-
-	}
+		for(Student ss:lo<Student>()  ) {
+			System.out.println("rollno"+ss.getRollNo() +"age"+ss.getAge()+ "name"+ss.getName());
+		}
+		for(Student rs:le<Student> () ) {
+			System.out.println("rollno"+rs.getRollNo() +"age"+rs.getAge()+ "name"+rs.getName());
+		}
+}
 
 }
